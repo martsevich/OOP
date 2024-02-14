@@ -1,5 +1,7 @@
 package main.drugstore;
 
+import java.util.Comparator;
+
 public  abstract class Component implements Comparable<Component> {
     private String title;
     public int weight;
@@ -29,25 +31,25 @@ public  abstract class Component implements Comparable<Component> {
 //        for (Component c : this.weight) o2 += c.getPower();
 //        return o2 + "";
 //    }
-    @Override
-    public int compareTo(Component o) {
-//        return this.power - o.power; // разница между ними – вычесть один из другого
-//        return Integer.compare(this.power, o.power); //(o.power, this.power);
+//    @Override
+//
+//    public int compareTo(Component o) {
+// //       return this.power - o.power; // разница между ними – вычесть один из другого
+////        return Integer.compare(this.power, o.power); //(o.power, this.power);
+//       //---------------------------------
+//
+//        return Integer.compare(this.getWeight(), o.weight);
 
-        //---------------------------------
-
-        //return Integer.compare(this.getWeight(), o.weight);
-
-        // Домашняя работа (сортировка по весу):
+        // (сортировка по весу):
 //--------------------------------------------------------------------------
-        if (this.weight > o.weight){
-            return -1;
-        }
-        else if (this.weight < o.weight){
-            return 1;
-        }
-        else {
-            return 0;
-        }
-    }
+//        if (this.weight > o.weight){
+//            return -1;
+//        }
+//        else if (this.weight < o.weight){
+//            return 1;
+//        }
+//        else {
+//            return 0;
+//        }
+//    }
 }
